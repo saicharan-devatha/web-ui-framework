@@ -1,0 +1,92 @@
+{
+  "name": "web-ui-automation",
+  "description": "web-ui-automation",
+  "version": "0.0.1",
+  "author": "saicharan devatha",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "smoke-prod_local": "grunt exe --env=prod --run=init --product=ud_ui_prod --type=smokeprod --parallel=yes --exeEnv=local --suitetype=smoke --retry=yes --applienabled=no --force"
+  },
+  "yahoo": {
+    "custodian": {
+      "email": "",
+      "url": ""
+    }
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "devDependencies": {
+    "@applitools/eyes-selenium": "4.52.6",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-node6-es6": "^11.2.5",
+    "bunyan": "^1.8.15",
+    "chai": "^4.2.0",
+    "chromedriver": "^93.0.1",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.0.0",
+    "dateformat": "^4.5.0",
+    "eslint": "^7.18.0",
+    "expect": "^26.6.2",
+    "geckodriver": "^1.22.1",
+    "googleapis": "^67.0.0",
+    "grunt-babel": "^7.0.0",
+    "grunt": "^1.3.0",
+    "grunt-cli": "^1.3.2",
+    "grunt-concurrent": "^3.0.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-jshint": "^3.0.0",
+    "grunt-mkdir": "^1.1.0",
+    "grunt-nodemailer": "^1.1.0",
+    "grunt-remove": "^0.1.0",
+    "grunt-shell-spawn": "^0.4.0",
+    "install": "^0.13.0",
+    "jasmine-expect": "^5.0.0",
+    "jasmine-fauxpas-reporter": "^0.0.2",
+    "jasmine-reporters": "^2.3.2",
+    "jasmine-spec-reporter": "^6.0.0",
+    "jsup": "0.0.1",
+    "load-grunt-tasks": "^5.1.0",
+    "lodash": "^4.17.20",
+    "mocha": "^8.2.1",
+    "nodemailer": "^6.4.17",
+    "path": "0.12.7",
+    "portfinder": "^1.0.28",
+    "promise": "^8.1.0",
+    "protractor": "^7.0.0",
+    "protractor-multicapabilities-htmlreporter_v2": "^0.0.6",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9",
+    "restler": "3.4.0",
+    "selenium-webdriver": "^4.0.0-alpha.8",
+    "shelljs": "0.8.4",
+    "striptags": "3.1.1",
+    "supertest": "^6.1.3",
+    "symbol.prototype.description": "^1.0.3",
+    "tap-file": "0.0.2",
+    "uri-util": "^1.1.0",
+    "uuid": "^3.4.0",
+    "xunit-file": "^1.0.0"
+  },
+  "jshintConfig": {
+    "undef": false,
+    "unused": false,
+    "globals": {
+      "browser": true,
+      "jasmine": true,
+      "protractor": true,
+      "describe": true,
+      "by": true,
+      "beforeEach": true,
+      "expect": true,
+      "it": true,
+      "require": true,
+      "console": true
+    }
+  }
+}

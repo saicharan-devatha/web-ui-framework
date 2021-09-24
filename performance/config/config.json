@@ -1,0 +1,24 @@
+{
+"extends":"/config/influxdb.json",
+  "browsertime": {
+    "browser": "chrome",
+    "iterations": 3,
+    "viewPort": "1920x1080",
+    "chrome": {
+      "args": "",
+     "timeline":true,
+     "cpu":true,
+     "collectNetLog": true,
+     "collectConsoleLog": true,
+     "collectLongTasks": true
+    },
+    "visualMetrics": true
+  },
+  "axe": {
+    "enable": true
+  },
+  "html": {
+  "showAllWaterfallSummary": true
+},
+  "summary": true
+}
